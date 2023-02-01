@@ -1,0 +1,48 @@
+{
+    "teams": [
+        {
+            "id":0,
+            "name": "Stranger Lines",
+            "nMembers": 5,
+            "members":[
+                "email1@email.com",
+                "email2@email.com",
+                "email3@email.com",
+                "email4@email.com",
+                "email5@email.com"
+            ],
+            "leader": "email4@email.com",
+            "solicitude": [
+                "Reto Endava"
+            ]
+        },
+        {
+            "id":1,
+            "name": "Equipo Dinamita",
+            "nMembers": 3,
+            "members":[
+                "email1@email.com",
+                "email2@email.com",
+                "email3@email.com"
+            ],
+            "leader": "email1@email.com",
+            "solicitude": [
+                "Reto Living"
+            ]
+        },
+        {
+            "id":2,
+            "name": "Dream Team",
+            "nMembers": 5,
+            "members":[
+                "email1@email.com",
+                "email2@email.com",
+                "email3@email.com",
+                "email4@email.com",
+                "email5@email.com"
+            ],
+            "leader": "email2@email.com",
+            "solicitude": []
+        }
+    ]
+}

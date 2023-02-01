@@ -1,0 +1,578 @@
+/*
+================================================================
+                          Constantes
+================================================================
+*/
+
+/*===========================/Colores/===========================*/
+:root{
+  --main-blue: #192A67;
+  --main-light-blue: #2889E1;
+  --main-bg: #F5F5F5;
+  --soft-gray: #C4C4C4;
+  --light-black: #5D5D61;
+  --black: #212121;
+}
+
+
+/*===========================/Fuentes/===========================*/
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("./assets/fonts/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/fonts/Roboto.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("./assets/fonts/NotoSans.ttf") format("truetype");
+}
+
+
+/*===========================/Background general/===========================*/
+.App{
+  background-color: var(--main-bg);
+  height: 100vh;
+}
+
+
+/*
+================================================================
+                        Pantallas <1024
+================================================================
+*/
+
+/*
+================================================================
+                            Atomos
+================================================================
+*/
+
+
+/*===========================/Title/===========================*/
+
+.titles{
+  /* Estilos de la fuente */
+  font-family: 'Poppins-Bold';
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 40px;
+  color: var(--main-blue);
+
+  /* Ubicación del texto */
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/*===========================/ButtonIco/===========================*/
+
+.buttonIco{
+  /* Tamaño*/
+  width: 28px;
+  height: 28px;
+
+  /* Estilos */
+  color: var(--main-blue);
+  border: none;
+  background-color: transparent;
+
+  /* Contenido */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+/*===========================/BackButton/===========================*/
+.backButton{
+  /* Tamaño */
+  width: 28px;
+  height: 28px;
+
+  /* Posición */
+  position: absolute;
+  top: 12%;
+
+  /* Estilos */
+  color: var(--main-blue);
+  border: none;
+  background-color: transparent;
+}
+
+
+/*
+================================================================
+                          Moleculas
+================================================================
+*/
+/*===========================/TeamForm/===========================*/
+.form{
+  /* Tamaño */
+  height: auto;
+  width: 436px;
+  min-height: 100px;
+
+  /* Estilos */
+  background-image: linear-gradient(to bottom, var(--main-blue), var(--main-light-blue));
+  border-radius: 12px;
+
+  /* Contenido */
+  padding: 5px;
+}
+
+.form-content{
+  /* Tamaño */
+  width: auto;
+  height: 100%;
+  min-height: 100px;
+
+  /* Estilos */
+  background-color: var(--main-bg);
+  border-radius: 10px;
+
+  /* Contenido */
+  padding: 25px;
+}
+
+.form-section-title{
+  /* Estilos de la fuente */
+  font-family: 'NotoSans';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+
+  /* Posición */
+  margin-left: -6px;
+
+  /* Estilos */
+  color: var(--light-black);
+
+}
+
+.inputComponent{
+  /* Contenido */
+  display: flex;
+  flex-direction: column;
+}
+
+.inputName{
+  /* Estilos de la fuente */
+  font-family: 'NotoSans';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  
+  /* Estilos */
+  color: var(--light-black);
+
+  /* Contenido */
+  padding-top: 9px;
+}
+
+.inputField, .selectField{
+  /* Tamaño */
+  height: 40px;
+  width: 100%;
+
+  /* Estilos de la fuente */
+  font-family: 'NotoSans';
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 7px;
+
+  /* Posición */
+  margin-bottom: 10px;
+
+  /* Contenido */
+  box-sizing: border-box;
+  padding-left: 16px;
+
+  /* Estilos */
+  color: var(--light-black);
+  border-color: var(--soft-gray);
+  background-color: white;
+  border: 1px solid var(--soft-gray);
+  border-radius: 8px;
+}
+
+.inputField:focus{
+  /* Estilos */
+  border-color: var(--light-black);
+}
+
+.selectField{
+  /* Estilos */
+  appearance: none;
+  background-image: url("./assets/icons/dropdownArrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 1rem auto;
+}
+
+.selectField:focus{
+  /* Estilos */
+  border-color: var(--light-black);
+}
+
+.formAddMinusButtons{
+  /* Tamaño */
+  width: 100%;
+
+  /* Contenido */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submitButton{
+  /* Estilos de la fuente */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+
+  /* Tamaño */
+  height: 42px;
+
+  /* Estilos */
+  background-color: var(--main-blue);
+  color: white;
+  border: 1px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+
+  /* Contenido */
+  display: flex;
+  align-items: center;
+  padding: 20px 24px;  
+}
+
+.submitSection{
+  /* Contenido */
+  padding-top: 77px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.addMinusSection{
+  /* Tamaño */
+  width: 100%;
+
+  /* Contenido */
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/*===========================/TeamCard/===========================*/
+.TeamCard, .TeamCardSolicitude{
+  /* Tamaño */
+  width: 100%;
+  max-width: 348px;
+  height: 63px;
+
+  /* Posición */
+  margin: 11px;
+
+  /* Estilos */
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+
+  /* Contenido */
+  box-sizing: border-box;
+  padding-left: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.TeamCard-title{
+  /* Estilos de la fuente */
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.25px;
+  color: var(--black);
+}
+
+.TeamCard-sub{
+  /* Estilos de la fuente */
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0.25px;
+  color: var(--light-black);
+}
+
+/*===========================/TeamCardSolicitude/===========================*/
+
+.TeamCardSolicitude{
+  /* Contenido */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+
+
+.descriptionSolicitude{
+  /* Tamaño */
+  max-width: 60%;
+  /* Posición */
+  margin-left: 14px;
+  /* Contenido */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.alertSolicitude{
+  /* Tamaño */
+  width: 100%;
+  height: 100%;
+  /* Posición */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonsSolicitude{
+  /* Tamaño */
+  width: 40%;
+  /* Posición */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*
+================================================================
+                          Organismos
+================================================================
+*/
+
+
+/*===========================/Header/===========================*/
+
+.header{
+  /* Tamaño */
+  height: 10%;
+
+  /* Estilos de la fuente */
+  color: white;
+  font-size: 40px;
+
+  /* Estilos */
+  background-color: var(--main-blue);
+  
+  /* Contenido */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 19px;
+}
+
+.logo{
+  /* Posición */
+  position: absolute;
+  margin: 0px auto;
+  left: 50%;
+  top: 30px;
+  transform: translate(-50%, 0);
+  
+}
+
+
+/*===========================/Teams/===========================*/
+
+.Teams, .TeamsSolicitudes{
+  /* Tamaño */
+  max-height: 50%;
+
+  /* Contenido */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+  overflow: hidden;
+  overflow-y: scroll;
+  /* Scrollbar */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.TeamsSolicitudes::-webkit-scrollbar, .Teams::-webkit-scrollbar {
+  /* Scrollbar */
+  display: none;
+}
+
+/*===========================/FormSection/===========================*/
+.TeamForm{
+  /* Contenido */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*
+================================================================
+                            Pages
+================================================================
+*/
+
+/*===========================/Home/===========================*/
+
+.TeamsSide{
+  /* Tamaño */
+  height: 100%;
+  width: 332px;
+
+  /* Contenido */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.Content{
+  /* Tamaño */
+  height: auto;
+
+  /* Estilos */
+  background-color: var(--main-bg);
+
+  /* Contenido */
+  padding-top: 62px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+
+
+@media (min-width: 641px) and (max-width: 1023px) {
+
+  
+/*===========================/Home/===========================*/
+  .TeamsSide{
+    /* Tamaño */
+    width: 100%;
+    /* Posición */
+    margin-top: 60px;
+  }
+
+  .Content{
+    /* Contenido */
+    flex-direction: column;
+    align-items: center;
+  }
+
+/*===========================/FormSection/===========================*/
+  .TeamForm{
+    /* Tamaño */
+    width: 100%;
+  }
+
+/*===========================/FormTeams/===========================*/
+  .form{
+    /* Tamaño */
+    width: 80%;
+  }
+
+/*===========================/Teams/===========================*/
+  .Teams, .TeamsSolicitudes{
+    /* Tamaño */
+    max-height: none;
+  }
+
+  .TeamCard, .TeamCardSolicitude{
+    /* Tamaño */
+    max-width: 80%;
+  }
+  
+/*===========================/Header/===========================*/
+  .logo{
+    /* Posición */
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translate(0, 0);
+
+    /* Tamaño */
+    height: 80%;
+  }
+
+}
+
+@media (max-width: 640px) {
+/*===========================/Home/===========================*/
+  .TeamsSide{
+    /* Tamaño */
+    width: 100%;
+    /* Posición */
+    margin-top: 60px;
+  }
+
+  .Content{
+    /* Contenido */
+    flex-direction: column;
+    align-items: center;
+  }
+
+/*===========================/FormSection/===========================*/
+  .TeamForm{
+    /* Tamaño */
+    width: 100%;
+  }
+/*===========================/FormTeams/===========================*/
+  .form{
+    /* Tamaño */
+    width: 80%;
+  }
+/*===========================/Teams/===========================*/
+  .Teams, .TeamsSolicitudes{
+    /* Tamaño */
+    max-height: none;
+  }
+
+  .TeamCard, .TeamCardSolicitude{
+    /* Tamaño */
+    max-width: 80%;
+  }
+
+/*===========================/Header/===========================*/
+  .sabana{
+    /* Posición */
+    display: none;
+  }
+  
+  .logo{
+    /* Posición */
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translate(0, 0);
+
+    /* Tamaño */
+    height: 80%;
+  }
+
+}
