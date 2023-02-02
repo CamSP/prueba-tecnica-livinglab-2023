@@ -1,5 +1,5 @@
-# Prueba técnica LivingLab - Universidad de La Sabana
-Este repositorio contiene una prueba técnica para el LivingLab de la Universidad de La Sabana, en el cual se desarrolla una aplicación de gestión de equipos y solicitudes.
+# Prueba técnica Living Lab - Universidad de La Sabana
+Este repositorio contiene una prueba técnica para el Living Lab de la Universidad de La Sabana, en el cual se desarrolla una aplicación de gestión de equipos y solicitudes.
 
 ![Implementación](/images/implementation.PNG)
 
