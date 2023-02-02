@@ -70,6 +70,8 @@
   /* Ubicación del texto */
   padding-bottom: 20px;
   text-align: center;
+
+  width: 100%;
 }
 
 /*===========================/ButtonIco/===========================*/
@@ -78,6 +80,7 @@
   /* Tamaño*/
   width: 28px;
   height: 28px;
+  
 
   /* Estilos */
   color: var(--main-blue);
@@ -85,10 +88,16 @@
   background-color: transparent;
 
   /* Contenido */
+  box-sizing: content-box;
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
 
+.iconInButton{
+  /* Tamaño */
+  width: 100%;
+  height: 100%;
 }
 
 /*===========================/BackButton/===========================*/
@@ -324,7 +333,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0px;
+  padding: 10px 0px;
 }
 
 
@@ -385,6 +394,18 @@
   padding: 0 19px;
 }
 
+.sabana{
+  /* Tamaño */
+  height: 100%;
+  width: auto;
+}
+
+.barsManu{
+  /* Tamaño */
+  width: auto;
+  height: 100%;
+}
+
 .logo{
   /* Posición */
   position: absolute;
@@ -441,7 +462,7 @@
 .TeamsSide{
   /* Tamaño */
   height: 100%;
-  width: 332px;
+  width: 400px;
 
   /* Contenido */
   display: flex;
@@ -553,6 +574,10 @@
     max-height: none;
   }
 
+  .TeamCardSolicitude{
+    /* Tamaño */
+    height: auto;
+  }
   .TeamCard, .TeamCardSolicitude{
     /* Tamaño */
     max-width: 80%;

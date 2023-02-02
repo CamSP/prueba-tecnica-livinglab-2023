@@ -37,9 +37,9 @@ const TeamCardSolicitude = ({solicitudeIndex, teamIndex, title, subtitle, delete
                 <label className="TeamCard-sub">{subtitle}</label>
             </div>
             <div className="buttonsSolicitude" style={{ display: isVisible ? 'flex' : 'none' }}>
-                <ButtonIco icon={<img src={check} alt="check"/>} onclick={()=>handleOption("Aprovado", "lime")}></ButtonIco>
-                <ButtonIco icon={<img src={block} alt="block"/>} onclick={()=>handleOption("Denegado", "red")}></ButtonIco>
-                <ButtonIco icon={<img src={deleteIco} alt="delete"/>} onclick={()=>handleOption("Eliminado", "goldenrod")}></ButtonIco>
+                <ButtonIco icon={<img src={check} alt="check" className="iconInButton"/>} onclick={()=>handleOption("Aprovado", "lime")}></ButtonIco>
+                <ButtonIco icon={<img src={block} alt="block" className="iconInButton"/>} onclick={()=>handleOption("Denegado", "red")}></ButtonIco>
+                <ButtonIco icon={<img src={deleteIco} alt="delete" className="iconInButton"/>} onclick={()=>handleOption("Eliminado", "goldenrod")}></ButtonIco>
             </div>
 
             <div className="alertSolicitude" style={{ display: isVisible ? 'none' : 'flex' }}>

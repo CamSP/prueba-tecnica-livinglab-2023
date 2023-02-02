@@ -35,7 +35,7 @@ const TeamSolicitude = ({teamsList, deleteSolicitude}) => {
 
     return (
         <div className="TeamsSolicitudes">
-            <Title title="Gestionar equipos"></Title>
+            <Title title="Solicitudes equipos"></Title>
             {/* Si no hay solicitudes se muestra el mensaje de que no hay solicitudes pendientes */}
             {cards.length>0 ? cards:<label className="TeamCard-title">No hay solicitudes pendientes</label>}
         </div>

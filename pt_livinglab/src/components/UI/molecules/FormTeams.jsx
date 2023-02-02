@@ -138,8 +138,8 @@ const FormTeams = ({teamsList, buttonText, setButtonText, setteamsList, teamID, 
                             ))}
                             <div className="addMinusSection">
                                 {/* Botones para añadir o eliminar un correo */}
-                                <ButtonIco icon={<img src={circleAdd} alt="addCircle"/>} onclick={addEmail}/>
-                                <ButtonIco icon={<img src={circleMinus} alt="minusCircle"/>} onclick={()=>{removeEmail()}}/>
+                                <ButtonIco icon={<img src={circleAdd} alt="addCircle" className="iconInButton"/>} onclick={addEmail}/>
+                                <ButtonIco icon={<img src={circleMinus} alt="minusCircle" className="iconInButton"/>} onclick={()=>{removeEmail()}}/>
                             </div>
                             {/* Titulo de la sección del formulario */}
                             <span className="form-section-title">Lider del equipo</span>
